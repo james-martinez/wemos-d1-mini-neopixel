@@ -17,5 +17,5 @@ jobs:
       - name: Store binary artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Binary
+          name: $GITHUB_REPOSITORY-example
           path: example/build
