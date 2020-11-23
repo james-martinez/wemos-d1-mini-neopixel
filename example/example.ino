@@ -14,10 +14,10 @@
 
 // Which pin on the Arduino is connected to the NeoPixels?
 // On a Trinket or Gemma we suggest changing this to 1:
-#define LED_PIN    1
+#define LED_PIN    D3
 
 // How many NeoPixels are attached to the Arduino?
-#define LED_COUNT 24
+#define LED_COUNT 50
 
 // Declare our NeoPixel strip object:
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ400);
