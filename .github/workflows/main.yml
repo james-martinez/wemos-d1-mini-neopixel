@@ -11,9 +11,9 @@ jobs:
         with:
           ref: main
       - name: Install neopixel library
-        run: arduino-cli lib install "Adafruit NeoPixel"
+        run: HOME=/root/ arduino-cli lib install "Adafruit NeoPixel"
       - name: Build from source
-        run: arduino-cli --config-file /root/.arduino15/arduino-cli.yaml compile -b esp8266:esp8266:d1_mini example/example.ino
+        run:  HOME=/root/ arduino-cli compile -b esp8266:esp8266:d1_mini example/example.ino
       - name: Store binary artifact
         uses: actions/upload-artifact@v2
         with:
