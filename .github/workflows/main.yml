@@ -17,5 +17,5 @@ jobs:
       - name: Store binary artifact
         uses: actions/upload-artifact@v2
         with:
-          name: $GITHUB_REPOSITORY-example
+          name: d1_mini_neopixel_example
           path: example/build
